@@ -69,7 +69,7 @@ class _AuthScreenState extends State<AuthScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_isLogin ? 'Login' : 'Registrasi'),
+        title: Text(_isLogin ? 'Login Penitipan Hewan' : 'Registrasi Penitipan Hewan'),
       ),
       body: Center(
         child: Card(
@@ -106,7 +106,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 else
                   ElevatedButton(
                     onPressed: _submitAuthForm,
-                    child: Text(_isLogin ? 'Login' : 'Registrasi'),
+                    child: Text(_isLogin ? 'Login' : 'Daftar'),
                   ),
                 TextButton(
                   onPressed: () {
